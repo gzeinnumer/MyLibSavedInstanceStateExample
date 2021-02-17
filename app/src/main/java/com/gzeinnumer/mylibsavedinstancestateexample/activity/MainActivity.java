@@ -6,8 +6,8 @@ import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.gzeinnumer.mylibsavedinstancestate.StateUI;
-import com.gzeinnumer.mylibsavedinstancestate.StateUIBuilder;
+import com.gzeinnumer.kus.StateUI;
+import com.gzeinnumer.kus.StateUIBuilder;
 import com.gzeinnumer.mylibsavedinstancestateexample.MenuActivity;
 import com.gzeinnumer.mylibsavedinstancestateexample.databinding.ActivityMainBinding;
 import com.gzeinnumer.mylibsavedinstancestateexample.utils.CustomToastDown;

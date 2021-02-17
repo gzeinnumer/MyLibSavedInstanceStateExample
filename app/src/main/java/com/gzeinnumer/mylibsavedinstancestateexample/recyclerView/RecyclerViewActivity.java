@@ -9,19 +9,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.gson.reflect.TypeToken;
-import com.gzeinnumer.mylibrecyclerviewadapterbuilder.helper.BindViewHolder;
-import com.gzeinnumer.mylibrecyclerviewadapterbuilder.singleType.AdapterBuilder;
-import com.gzeinnumer.mylibrecyclerviewadapterbuilder.singleType.AdapterCreator;
-import com.gzeinnumer.mylibsavedinstancestate.ListStateCallBack;
-import com.gzeinnumer.mylibsavedinstancestate.ListStateReceiver;
-import com.gzeinnumer.mylibsavedinstancestate.StateUI;
-import com.gzeinnumer.mylibsavedinstancestate.StateUIBuilder;
+import com.gzeinnumer.kus.ListStateCallBack;
+import com.gzeinnumer.kus.ListStateReceiver;
+import com.gzeinnumer.kus.StateUI;
+import com.gzeinnumer.kus.StateUIBuilder;
 import com.gzeinnumer.mylibsavedinstancestateexample.MenuActivity;
 import com.gzeinnumer.mylibsavedinstancestateexample.R;
 import com.gzeinnumer.mylibsavedinstancestateexample.databinding.ActivityRecyclerViewBinding;
 import com.gzeinnumer.mylibsavedinstancestateexample.databinding.ItemRvBinding;
 import com.gzeinnumer.mylibsavedinstancestateexample.utils.CustomToastDown;
 import com.gzeinnumer.mylibsavedinstancestateexample.utils.CustomToastUp;
+import com.gzeinnumer.rab.helper.BindViewHolder;
+import com.gzeinnumer.rab.singleType.AdapterBuilder;
+import com.gzeinnumer.rab.singleType.AdapterCreator;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -105,7 +105,7 @@ public class RecyclerViewActivity extends AppCompatActivity {
                 .setList(list)
                 .onBind(new BindViewHolder<MyModel>() {
                     @Override
-                    public void bind(View holder, MyModel data, int position) {
+                    public void bind(AdapterCreator<MyModel> adapter, View holder, MyModel data, int position) {
                         ItemRvBinding bindingItem = ItemRvBinding.bind(holder);
                         bindingItem.tv.setText(data.getName());
 

@@ -10,8 +10,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.gzeinnumer.mylibsavedinstancestate.StateUI;
-import com.gzeinnumer.mylibsavedinstancestate.StateUIBuilder;
+import com.gzeinnumer.kus.StateUI;
+import com.gzeinnumer.kus.StateUIBuilder;
 import com.gzeinnumer.mylibsavedinstancestateexample.MenuActivity;
 import com.gzeinnumer.mylibsavedinstancestateexample.databinding.FragmentHomeBinding;
 import com.gzeinnumer.mylibsavedinstancestateexample.utils.CustomToastDown;
